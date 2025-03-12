@@ -24,7 +24,7 @@ const Testimonials = () => {
   return (
     <section className="w-full bg-gray-100 pt-12 px-6 pb-20">
       <div className="max-w-4xl mx-auto text-center">
-        <div className="w-20 h-1 bg-teal-500 mx-auto mb-3"></div>
+        <div className="w-20 h-1 bg-blue-600 mx-auto mb-3"></div>
         <h2 className="text-3xl font-bold text-gray-900">
           What People Say About Us
         </h2>
@@ -40,7 +40,7 @@ const Testimonials = () => {
             transition={{ duration: 0.6, delay: index * 0.2 }}
             whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0,0,0,0.2)" }}
           >
-            <FaQuoteLeft className="text-teal-500 text-3xl mb-3" />
+            <FaQuoteLeft className="text-blue-600 text-3xl mb-3" />
             <p className="text-gray-700 text-base italic">"{testimonial.quote}"</p>
             <p className="mt-4 font-semibold text-gray-900 text-lg">
               – {testimonial.author}

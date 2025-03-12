@@ -21,12 +21,17 @@ const Contact = () => {
         <div className="mt-6">
           <p className="font-semibold">Follow Us:</p>
           <div className="flex gap-4 mt-2 text-xl text-gray-700">
-            <FaFacebook />
-            <FaInstagram />
-            <FaTwitter />
-            <FaLinkedin />
-            <FaYoutube />
-          </div>
+  <a href="https://www.facebook.com/AnanyPahal" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700">
+    <FaFacebook />
+  </a>
+  <a href="https://www.instagram.com/ananypahal" target="_blank" rel="noopener noreferrer" className="hover:text-pink-600">
+    <FaInstagram />
+  </a>
+  <a href="https://www.youtube.com/channel/UCXXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="hover:text-red-600">
+    <FaYoutube />
+  </a>
+</div>
+
         </div>
       </div>
 
@@ -39,7 +44,7 @@ const Contact = () => {
           <TextField label="Your Name" variant="outlined" fullWidth />
           <TextField label="Your Email" variant="outlined" fullWidth />
           <TextField label="Your Message" variant="outlined" multiline rows={4} fullWidth />
-          <Button variant="contained" sx={{ backgroundColor: "#2D9C89" }}>
+          <Button variant="contained" sx={{ backgroundColor: "blue-600" }}>
             SUBMIT
           </Button>
         </form>

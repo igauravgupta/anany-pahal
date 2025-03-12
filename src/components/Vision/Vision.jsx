@@ -2,7 +2,7 @@ import React from "react";
 import { FaHandHoldingHeart, FaBook, FaUsers, FaLeaf } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Initiatives from "./Initiatives";
-import Mision from "../routes/Mision";
+import Mision from "./Mision";
 import CoreValues from "./CoreValues";
 import Impact from "./Impact";  
 
@@ -12,7 +12,7 @@ const Vision = () => {
 
       <div className="text-center py-16 pt-40">
         <motion.h1
-          className="text-4xl md:text-5xl font-extrabold text-teal-600"
+          className="text-4xl md:text-5xl font-extrabold text-blue-600"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}

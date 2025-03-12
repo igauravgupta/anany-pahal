@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@mui/material";
+import { Link } from "react-router";
 
 const CTASection = () => {
   return (
@@ -32,18 +33,40 @@ const CTASection = () => {
         </motion.h2>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-6"
-        >
-          <Button 
-                      variant="contained" 
-                      sx={{ backgroundColor: "#20C997", color: "white", fontWeight: "bold", padding: "10px 20px" }}
-                    href="/contact">
-                    Get Involved
-                    </Button>
-        </motion.div>
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.4 }}
+  className="mt-6 flex space-x-4" // Added flex and space-x-4 for spacing
+>
+  <Link to="/contact">
+    <Button
+      variant="contained"
+      sx={{
+        backgroundColor: "#20C997",
+        color: "white",
+        fontWeight: "bold",
+        padding: "10px 20px",
+      }}
+    >
+      Get Involved
+    </Button>
+  </Link>
+
+  <Link to="/donate"> {/* Added path for Donate */}
+    <Button
+      variant="contained"
+      sx={{
+        backgroundColor: "#20C997",
+        color: "white",
+        fontWeight: "bold",
+        padding: "10px 20px",
+      }}
+    >
+      Donate Now
+    </Button>
+  </Link>
+</motion.div>
+
       </div>
     </section>
   );

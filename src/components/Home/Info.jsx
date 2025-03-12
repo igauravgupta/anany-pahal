@@ -29,7 +29,7 @@ const Info = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h3 className="text-teal-500 text-lg uppercase font-semibold tracking-wide">
+        <h3 className="text-blue-600 text-lg uppercase font-semibold tracking-wide">
           About Anany Pahal
         </h3>
         <h1 className="text-4xl font-bold mt-3 leading-snug">

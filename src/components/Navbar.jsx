@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Vision", path: "/vision" },
-    { name: "Events", path: "/events" },
+    { name: "Gallery", path: "/gallery" },
     { name: "Team", path: "/team" },
     { name: "Contact", path: "/contact" },
   ];
@@ -40,7 +40,7 @@ const Navbar = () => {
               to={item.path}
               className={`relative transition ${
                 location.pathname === item.path
-                  ? "text-[#20C997] font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-[#20C997]"
+                  ? "text-blue-600 font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-blue-600"
                   : "text-black hover:text-gray-500"
               }`}
             >
@@ -52,12 +52,13 @@ const Navbar = () => {
 
       {/* Donate Button (Visible on Large Screens) */}
       <div className="hidden md:block">
+      <Link to="/donate">
         <Button
-          variant="contained"
-          sx={{ backgroundColor: "#20C997", color: "white", fontWeight: "bold" }}
-        >
-          Donate Now
-        </Button>
+            variant="contained"
+            sx={{ backgroundColor: "#20C997", color: "white", fontWeight: "bold" }}
+          >
+            Donate Now
+          </Button></Link>
       </div>
 
       {/* Mobile Menu (Dropdown) */}
@@ -78,13 +79,14 @@ const Navbar = () => {
             </Link>
           ))}
 
-          {/* Donate Button (Visible on Mobile) */}
-          <Button
+         
+        <Link to="/donate">
+        <Button
             variant="contained"
             sx={{ backgroundColor: "#20C997", color: "white", fontWeight: "bold" }}
           >
             Donate Now
-          </Button>
+          </Button></Link>
         </div>
       )}
     </nav>

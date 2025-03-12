@@ -20,7 +20,7 @@ const Initiatives = () => {
     <section className="bg-gray-100 py-16 px-6 text-gray-900">
       <div className="text-center mb-12">
         <motion.h2 
-          className="text-4xl font-extrabold text-teal-600"
+          className="text-4xl font-extrabold text-blue-600"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -33,13 +33,13 @@ const Initiatives = () => {
         {initiatives.map((initiative, index) => (
           <motion.div
             key={index}
-            className="bg-white p-6 shadow-lg rounded-xl border-l-4 border-teal-500"
+            className="bg-white p-6 shadow-lg rounded-xl border-l-4 border-blue-600"
             whileHover={{ scale: 1.05 }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
           >
-            <h3 className="text-xl font-semibold text-teal-600">{initiative.name}</h3>
+            <h3 className="text-xl font-semibold text-blue-600">{initiative.name}</h3>
             <p className="mt-2 text-gray-700">{initiative.description}</p>
           </motion.div>
         ))}

@@ -2,11 +2,10 @@ import React from "react";
 import { Button } from "@mui/material";
 import { motion } from "framer-motion";
 import Features from "./Features";
-import AboutUs from "./AboutUs";
-import FoundersNote from "./FoundersNote";
 import CTASection from "./CTASection";
 import Info from "./Info"
 import Testimonials from "./Testimonials";
+import {Link} from "react-router"
 
 const Hero = () => {
   return (
@@ -48,25 +47,25 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          <Button variant="contained" color="primary" sx={{ padding: "10px 20px" }}
-          href="/vision">
+         <Link to="/vision"> 
+         <Button variant="contained" color="primary" sx={{ padding: "10px 20px" }}
+    >
             Our Vision
-          </Button>
-          <Button 
-            variant="contained" 
-            sx={{ backgroundColor: "#20C997", color: "white", fontWeight: "bold", padding: "10px 20px" }}
-          >
-            Donate Now
-          </Button>
+          </Button></Link>
+          <Link to="/contact">
+                   <Button 
+                               variant="contained" 
+                               sx={{ backgroundColor: "#20C997", color: "white", fontWeight: "bold", padding: "10px 20px" }}
+                            >
+                             Get Involved
+                             </Button></Link>
         </motion.div>
       </section>
-<Info/>
+  <Info/>
 <CTASection />
 
       <Features />
       <Testimonials />
-
-      {/* <FoundersNote /> */}
     </>
   );
 };
