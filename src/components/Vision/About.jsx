@@ -6,7 +6,7 @@ import Mision from "./Mision";
 import CoreValues from "./CoreValues";
 import Impact from "./Impact";  
 
-const Vision = () => {
+const About = () => {
   return (
     <section className="bg-gray-100 text-gray-900 ">
 
@@ -31,4 +31,4 @@ const Vision = () => {
   );
 };
 
-export default Vision;
+export default About;

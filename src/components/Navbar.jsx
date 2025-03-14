@@ -8,7 +8,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Vision", path: "/vision" },
+    { name: "About Us", path: "/AboutUs" },
     { name: "Gallery", path: "/gallery" },
     { name: "Team", path: "/team" },
     { name: "Contact", path: "/contact" },
