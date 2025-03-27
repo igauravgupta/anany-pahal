@@ -61,11 +61,9 @@ const Hero = () => {
                              </Button></Link>
         </motion.div>
       </section>
-  <Info/>
-<CTASection />
-
+      <Info/>
       <Features />
-      <Testimonials />
+      <CTASection />
     </>
   );
 };

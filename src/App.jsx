@@ -1,6 +1,6 @@
   import React, { useState } from 'react'
-  import Navbar from './components/Navbar'
-  import Footer from './components/Footer'
+  import Navbar from './components/Shared/Navbar'
+  import Footer from './components/Shared/Footer'
   import { Outlet } from 'react-router'
 
 
@@ -8,7 +8,7 @@
     
     return (
       <>
-       <Navbar />
+        <Navbar />
         <Outlet/>
         <Footer />
       </>
