@@ -68,7 +68,7 @@ const Navbar = () => {
               to={item.path}
               className={`text-lg ${
                 location.pathname === item.path
-                  ? "text-red-500 font-bold"
+                  ? "text-blue-500 font-bold"
                   : "text-black hover:text-red-500 hover:font-bold"
               }`}
               onClick={() => setMenuOpen(false)}
@@ -78,7 +78,7 @@ const Navbar = () => {
           ))}
 
           <Link to="/donate">
-            <button className="bg-red-500 text-white font-bold py-2 px-6 rounded-full hover:bg-red-600 transition duration-300">
+            <button className="bg-blue-500 text-white font-bold py-2 px-6 rounded-full hover:bg-red-600 transition duration-300">
               Donate Now
             </button>
           </Link>
