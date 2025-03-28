@@ -4,7 +4,7 @@ const MainContent = () => {
       {/* Main Content */}
       <div className="flex-1 px-4 md:px-8">
         <img
-          src="./public/cta2.jpg"
+          src="/cta2.jpg"
           alt="Header Image"
           className="w-full rounded-lg shadow-md mb-6"
         />
@@ -35,7 +35,7 @@ const MainContent = () => {
           {/* Self-Study Room */}
           <div>
             <h1 className="text-blue-500 text-xl font-bold mb-2">#Self Study Room</h1>
-            <img src="./public/cta2.jpg" alt="Self-Study Room" className="w-full rounded-lg shadow-md" />
+            <img src="/cta2.jpg" alt="Self-Study Room" className="w-full rounded-lg shadow-md" />
             <h3 className="text-lg font-semibold mt-3 text-gray-800">Self-Study Room</h3>
             <p className="text-gray-700 leading-relaxed mt-2">
               The Self-Study Room provides a quiet and well-equipped space for students to focus on their studies without distractions.
@@ -51,7 +51,7 @@ const MainContent = () => {
           {/* Anany Digitalshala */}
           <div>
             <h1 className="text-blue-500 text-xl font-bold mb-2">#Anany Digitalshala</h1>
-            <img src="./public/cta2.jpg" alt="Anany Digitalshala" className="w-full rounded-lg shadow-md" />
+            <img src="/cta2.jpg" alt="Anany Digitalshala" className="w-full rounded-lg shadow-md" />
             <h3 className="text-lg font-semibold mt-3 text-gray-800">Empowering Students with Digital Education</h3>
             <p className="text-gray-700 leading-relaxed mt-2">
               Anany Digitalshala provides free digital education to students up to class 12, helping bridge the digital divide.
